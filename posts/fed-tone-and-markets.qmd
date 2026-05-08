@@ -19,7 +19,7 @@ Central bank communication matters because financial markets are forward-looking
 
 The project is therefore not trying to predict markets perfectly. Instead, it asks whether a simple text-based measure of FOMC tone contains any observable information that lines up with short-term market movements.
 
-# Research Question
+## Research Question
 
 Do more hawkish Federal Reserve statements correspond to changes in short-term market reactions?
 
@@ -53,15 +53,16 @@ After cleaning the statement text and preparing the market data, I merged both d
 The project was organised as a reproducible Python workflow. The raw text data and market data were stored separately, cleaned through individual scripts, and then merged into a final analysis dataset.
 
 | Step | Script | Purpose |
-|---|---|---|
-| 1 | `01_scrape_fed_statements.py` | Scrapes FOMC statement text from the Federal Reserve website |
-| 2 | `02_clean_fed_statements.py` | Cleans statement text and prepares word counts |
-| 3 | `03_build_tone_scores.py` | Constructs hawkish and dovish tone scores |
-| 4 | `04_clean_market_data.py` | Cleans financial market data |
-| 5 | `05_merge_event_dataset.py` | Merges statement tone with same-date market movements |
-| 6 | `06_run_analysis.py` | Produces summary statistics and regression results |
-| 7 | `07_make_figures.py` | Creates static figures |
-| 8 | `08_make_interactive_figures.py` | Creates interactive Plotly figures for the website |
+|----|----|----|
+| 1  | `01_scrape_fed_statements.py` | Scrapes FOMC statement text from the Federal Reserve website |
+| 2  | `02_clean_text.py` | Cleans statement text and prepares word counts |
+| 3  | `03_build_tone_scores.py` | Constructs hawkish and dovish tone scores |
+| 3b | `03b_compare_tone_dictionaries.py` | Compares baseline with expanded dictionary |
+| 4  | `04_prepare_market_data.py` | Cleans financial market data |
+| 5  | `05_merge_event_dataset.py` | Merges statement tone with same-date market movements |
+| 6  | `06_run_analysis.py` | Produces summary statistics and regression results |
+| 7  | `07_make_figures.py` | Creates static figures |
+| 8  | `08_make_interactive_figures.py` | Creates interactive Plotly figures for the website |
 
 This structure separates data collection, cleaning, scoring, merging, analysis, and visualisation. This makes the project easier to reproduce and reduces the risk of manually changing the final dataset.
 
@@ -74,7 +75,7 @@ The text analysis uses a dictionary-based approach. I created lists of hawkish a
 The raw tone score is calculated as:
 
 $$
-\text{Tone Score} = \text{Hawkish Count} - \text{Dovish Count}\
+\text{Tone Score} = \text{Hawkish Count} - \text{Dovish Count}
 $$
 
 Because FOMC statements vary in length, I also calculated a normalised score:
@@ -154,6 +155,19 @@ However, the tone score should not be interpreted as a complete measure of the F
 
 ### Results: market reactions
 
+#### US 2-year Treasury yield
+
+***The clearest relationship appears between the normalised tone score and changes in the US 2-year Treasury yield. This is economically intuitive because the 2-year yield is sensitive to expectations about future monetary policy.***
+
+***A more hawkish statement may lead investors to expect higher future interest rates, which can push short-term yields upward. The relationship is not perfect, but it is stronger than the relationships observed for the S&P 500 and the US dollar index.***
+
+<iframe 
+  src="../output/interactive_figures/tone_vs_us2yield_fit.html"
+  width="100%" 
+  height="560" 
+  style="border: none;">
+</iframe>
+
 #### S&P 500
 
 ***The relationship between FOMC tone and S&P 500 returns is weak. This is not surprising because equities respond to several channels at once. Hawkish language may be negative for equities through higher discount rates, but it may also reflect a stronger economy, which can support earnings expectations.***
@@ -171,19 +185,6 @@ However, the tone score should not be interpreted as a complete measure of the F
 
 <iframe 
   src="../output/interactive_figures/tone_vs_usd_fit.html"
-  width="100%" 
-  height="560" 
-  style="border: none;">
-</iframe>
-
-#### US 2-year Treasury yield
-
-***The clearest relationship appears between the normalised tone score and changes in the US 2-year Treasury yield. This is economically intuitive because the 2-year yield is sensitive to expectations about future monetary policy.***
-
-***A more hawkish statement may lead investors to expect higher future interest rates, which can push short-term yields upward. The relationship is not perfect, but it is stronger than the relationships observed for the S&P 500 and the US dollar index.***
-
-<iframe 
-  src="../output/interactive_figures/tone_vs_us2yield_fit.html"
   width="100%" 
   height="560" 
   style="border: none;">
