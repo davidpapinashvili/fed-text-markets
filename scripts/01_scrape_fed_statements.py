@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from pathlib import Path
 import re
+import time
 
 BASE_URL = "https://www.federalreserve.gov"
 ARCHIVE_URL = "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
@@ -64,6 +65,17 @@ def scrape_statement(url):
         "statement_text": body_text
     }
 
+def is_standard_fomc_statement(row):
+    """
+    The Federal Reserve archive includes some non-standard releases under
+    the same URL pattern, e.g. the quinquennial update to the Statement on
+    Longer-Run Goals and Monetary Policy Strategy. Standard policy
+    statements have the title 'Federal Reserve issues FOMC statement'.
+    """
+    title = str(row.get("title", "")).lower()
+    return "issues fomc statement" in title
+
+
 def main():
     print("Starting scraper...")
     output_path = Path("data/raw/fed_statements_raw.csv")
@@ -77,12 +89,26 @@ def main():
             row = scrape_statement(link)
             rows.append(row)
             print("Scraped successfully.")
+            time.sleep(0.5)  # be polite to the Fed's server
         except Exception as e:
             print(f"Failed: {link} | {e}")
 
     print("Rows collected:", len(rows))
 
     df = pd.DataFrame(rows)
+
+    # Filter out non-standard releases (e.g. framework-review documents)
+    before_filter = len(df)
+    df["is_standard"] = df.apply(is_standard_fomc_statement, axis=1)
+    excluded = df[~df["is_standard"]].copy()
+
+    if not excluded.empty:
+        print("\nExcluded non-standard releases:")
+        print(excluded[["date", "title"]].to_string(index=False))
+
+    df = df[df["is_standard"]].drop(columns=["is_standard"]).reset_index(drop=True)
+    print(f"\nKept {len(df)} of {before_filter} releases as standard FOMC statements.")
+
     output_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False)
 
@@ -90,4 +116,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
