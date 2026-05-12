@@ -1,8 +1,11 @@
 project:
   type: website
+  resources: 
+    - "CNAME"
   output-dir: docs
 
 website:
+  site-url: https://deltaoneresearch.co.uk
   title: "Delta One Research"
   navbar: 
     title: false
