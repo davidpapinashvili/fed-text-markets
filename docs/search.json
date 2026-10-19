@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Delta One Research\n    Markets · Macro · Data Science\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReading the Fed: A Text-Based Analysis of FOMC Statements and Market Reactions\n\n\n\n\n\n\n\n\nApr 12, 2026\n\n\nDavid Papinashvili\n\n\n\n\n\nNo matching items"
+    "text": "Delta One Research\n    Markets · Macro · Data Science\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWere houses more affordable in 2008 than in 2023?\n\n\n\n\n\n\n\n\nSep 3, 2026\n\n\nDavid Papinashvili\n\n\n\n\n\n\n\n\n\n\n\n\nReading the Fed: A Text-Based Analysis of FOMC Statements and Market Reactions\n\n\n\n\n\n\n\n\nApr 12, 2026\n\n\nDavid Papinashvili\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -18,14 +18,70 @@
     "href": "index.html#featured-post",
     "title": "Home",
     "section": "Featured Post",
-    "text": "Featured Post\n\nDo Central Bank Statements Move Makrets?"
+    "text": "Featured Post\n\nDo Central Bank Statements Move Markets?"
   },
   {
     "objectID": "index.html#what-this-site-is-about",
     "href": "index.html#what-this-site-is-about",
     "title": "Home",
     "section": "What this site is about",
-    "text": "What this site is about\nDelta Point is my personal blog that I created while working on a university project analysing the relationship between the tone of Federal Reserve communications and financial markets. I’m planning to use this blog to share my findings from various interesting topics of the sector, and hopefully spark some interesting discussions. If you have any questions or suggestions, feel free to reach out! Thanks for visiting Delta One Research."
+    "text": "What this site is about\nDelta One Research is my personal blog that I created while working on a university project analysing the relationship between the tone of Federal Reserve communications and financial markets. I’m planning to use this blog to share my findings from various interesting topics of the sector, and hopefully spark some interesting discussions. If you have any questions or suggestions, feel free to reach out! Thanks for visiting Delta One Research."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html",
+    "href": "posts/houses-2008-2023/index.html",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "",
+    "text": "Delta One Research\n    Markets · Macro · Data Science\nIn 2008 the average UK house cost 10.38 times the average person’s disposable income. In 2023 it cost 10.43 times. Fifteen years later, after a financial crisis, Brexit, a pandemic and an inflation shock, housing affordability was almost exactly where it started.\nThat sounds like a story about nothing changing. It is the opposite. The ratio landed on the same number twice, in two housing markets that could hardly have been more different."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#what-the-ratio-measures",
+    "href": "posts/houses-2008-2023/index.html#what-the-ratio-measures",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "What the ratio measures",
+    "text": "What the ratio measures\nThe ratio divides the average house price by disposable income per head: the money households have left after taxes and benefits, shared across the whole population. A ratio of 10 means the average house costs ten years of the average person’s disposable income.\n\n\n\n\n\n\nNoteWhy this ratio is higher than the one ONS publishes\n\n\n\n\n\nThe income measure is gross disposable household income (GDHI) per head: total household income after taxes and benefits, divided by everyone in the UK, including children and people who are not working. Dividing by more people gives a smaller income figure, which is why this ratio sits near 10.\nThe ONS house price to earnings ratio for England compares the median house price with a typical full-time worker’s earnings instead, and sits nearer 8.\nThe two are not comparable in levels. They are comparable in direction, which is all this post relies on."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#same-number-opposite-stories",
+    "href": "posts/houses-2008-2023/index.html#same-number-opposite-stories",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "Same number, opposite stories",
+    "text": "Same number, opposite stories\nThe ratio is a fraction, so it can fall for two reasons. The price on top can fall, or the income underneath can rise.\nIn 2009 the ratio fell 10.4%, and nearly all of that came from the top. The average house price fell 8.9% as the financial crisis hit, while income grew 1.7%.\nIn 2023 the ratio fell 7.5%, and this time the top barely moved. House prices rose 0.3%. Income per head jumped 8.4%.\nIn cash terms, then, one fall was a price crash and the other was an income boom. But 2023 did not feel like a boom to anyone living through it, and that is the clue."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#after-inflation-the-two-years-look-the-same",
+    "href": "posts/houses-2008-2023/index.html#after-inflation-the-two-years-look-the-same",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "After inflation, the two years look the same",
+    "text": "After inflation, the two years look the same\nConsumer prices rose 7.2% in 2023, so most of that 8.4% income rise was the cost of living going up, not people getting better off. After adjusting for inflation, income per head rose about 1.1%.\nThe house price side changes even more. A house that costs the same in cash, in a year when everything else gets 7% more expensive, has become cheaper in real terms. After inflation, the average house lost 6.5% of its value in 2023.\nPut both years through the same adjustment and the two stories become one.\n\n\nAfter inflation, about 86% of the 2023 fall in the ratio came from house prices. So the difference between the two years is less about what happened than about how visible it was. In 2009 the price tag itself fell. In 2023 the price tag stood still and inflation did the cutting.\nThis also answers the question in the title. After inflation, the average house in 2023 cost about 3% more than in 2008, and income per head was about 3% higher. Fifteen years on, neither side of the ratio had moved much, which is why it ended up in the same place.\n\n\n\n\n\n\nNoteHow the inflation adjustment works\n\n\n\n\n\n“Real terms” means restating every year in the same year’s money, here 2023 pounds, so that a change reflects what money can actually buy.\nEach year’s house price and income are multiplied by CPI in 2023 divided by CPI in that year. CPI is the ONS Consumer Prices Index, series D7BT, annual average, 2015 = 100.\nOne consequence is worth spelling out. The same adjustment is applied to the top and the bottom of the ratio, so it cancels out: the real ratio is identical to the cash ratio. Adjusting for inflation does not change how affordable housing was. It changes the explanation of why.\nThe 86% figure splits the change in the ratio into a price part and an income part using log changes, which add up exactly. ONS’s own real income figures use a different price index, the household spending deflator, so the numbers here will not match them exactly."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#what-about-brexit",
+    "href": "posts/houses-2008-2023/index.html#what-about-brexit",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "What about Brexit?",
+    "text": "What about Brexit?\nI originally built this dataset to ask whether UK housing became less affordable after the 2016 referendum. The timing does not fit.\nThe ratio bottomed out in 2013 and had climbed 11.5% by 2016, about 3.7% a year. From 2016 to the 2022 peak it rose 11.1%, about 1.8% a year. Affordability was getting worse twice as fast before the vote as after it. The years after 2016 also contain a pandemic, a stamp duty holiday and a sharp rise in mortgage rates, any of which could move the ratio on its own.\nThe one year that does stand out is 2016 itself. The ratio jumped 5.7% that year, its biggest rise since 2004. Annual data cannot say whether that happened before or after the vote in June, so I went back to the monthly prices.\n\n\nMost of the 2016 rise had already happened by the time Britain voted. The true pre-vote share is probably larger still, because the data records each sale when it completes, often two to three months after the price is agreed. Many of the sales recorded in July and August were deals struck before the referendum.\nNone of this shows Brexit had no effect on housing. It shows this data cannot isolate one, and that a simple before-and-after comparison would credit Brexit with a trend that started three years earlier.\n\n\n\n\n\n\nNoteChecking the 2016 split\n\n\n\n\n\nThree checks on the monthly comparison:\n\nUnequal halves. January to June covers five monthly steps and June to December covers six. The first half did more in less time: 0.71% a month against 0.20%.\nInflation. Adjusted for CPI, prices rose 2.5% in the first half and fell 0.1% in the second. In real terms, all of 2016’s rise came before the vote.\nA tax change. A 3% stamp duty surcharge on second homes and buy-to-let purchases started on 1 April 2016, which pulled some purchases forward into March. Removing March’s 1.0% rise entirely still leaves the first half at 2.6%, twice the second half."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#what-this-does-not-show",
+    "href": "posts/houses-2008-2023/index.html#what-this-does-not-show",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "What this does not show",
+    "text": "What this does not show\n\nMortgage costs. The ratio compares prices with income and ignores the cost of borrowing, which rose sharply through 2022 and 2023. For a buyer who needed a mortgage, 2023 was harder than the ratio suggests.\nRegions. These are UK averages. London and the North East can move in opposite directions and still produce a calm national figure.\nTiming within the year. Most of the series is annual, which blurs anything that happens inside a year. The monthly check only covers 2016.\nCauses. This is descriptive. It shows what moved, not why."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#so-what",
+    "href": "posts/houses-2008-2023/index.html#so-what",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "So what",
+    "text": "So what\nNext time a headline says housing became more affordable, two questions are worth asking. Which side of the ratio moved: prices or income? And did it move in real terms, or did inflation do the work?\nThe same number can describe a crash or a quiet erosion. The ratio cannot tell them apart, so you have to look underneath it."
+  },
+  {
+    "objectID": "posts/houses-2008-2023/index.html#data-and-code",
+    "href": "posts/houses-2008-2023/index.html#data-and-code",
+    "title": "Were houses more affordable in 2008 than in 2023?",
+    "section": "Data and code",
+    "text": "Data and code\nHouse prices come from the HM Land Registry UK House Price Index, income from the ONS series for gross disposable household income per head, and inflation from the ONS Consumer Prices Index (series D7BT). The data cleaning runs on the Linux command line, and those scripts are in the original project repository. The inflation adjustment and the interactive charts are built by scripts/housing_make_interactive_figures.py in this site’s GitHub repository.\n\n\n\n\n\n\nNoteHow the dataset was built\n\n\n\n\n\nEvery cleaning step is a command line script rather than a manual spreadsheet edit, so the whole dataset can be rebuilt from the raw files.\nStandardise the dates in the house price file from DD/MM/YYYY to YYYY-MM-DD:\nsed -E 's|([0-9]{2})/([0-9]{2})/([0-9]{4})|\\3-\\2-\\1|' uk_hpi.csv &gt; uk_hpi_fixed_delimiter.csv\nKeep the UK-wide rows and average the monthly prices into annual figures:\ntail -n +2 uk_hpi_fixed_delimiter.csv | grep \"United Kingdom\" | \\\nawk -F ',' '{ year=substr($1, 1, 4); sum[year]+=$4; count[year]++ }\nEND { for (year in sum) print year, sum[year]/count[year] }' | \\\nsort &gt; uk_hpi_annual_average.csv\nDo the same for income, skipping the six lines of notes at the top of the ONS file:\ntail -n +7 uk_gdhi.csv | grep \"United Kingdom\" | \\\nawk -F ',' '{ year=substr($3, 1, 4); sum[year]+=$4; count[year]++ }\nEND { for (year in sum) print year, sum[year]/count[year] }' | \\\nsort &gt; uk_gdhi_annual_average.csv\nSort both files, then join them on year and compute the ratio. join keeps only the years that appear in both files:\ncp uk_gdhi_annual_average.csv income.txt\ncp uk_hpi_annual_average.csv houseprice.txt\nsort income.txt &gt; sortedincome.txt\nsort houseprice.txt &gt; sortedhpi.txt\n\necho 'Year AvgHPI GDHI Ratio' &gt; affordability.txt\njoin sortedhpi.txt sortedincome.txt | awk '{print $1, $2, $3, $2/$3}' | sort -n &gt;&gt; affordability.txt\nThe 2016 monthly figures come straight from the cleaned house price file:\ngrep \"United Kingdom\" uk_hpi_fixed_delimiter.csv | awk -F ',' '$1 ~ /^2016/ { print $1, $4 }'"
   },
   {
     "objectID": "posts/fed-tone-and-markets.html",

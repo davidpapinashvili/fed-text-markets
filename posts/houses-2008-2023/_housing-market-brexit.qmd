@@ -1,0 +1,44 @@
+---
+title: "Houses cost the same in 2008 and 2023"
+subtitle: "The same affordability ratio, produced by opposite economies. UK data, 2003 to 2023."
+author: "David Papinashvili"
+date: 3 September 2026
+image: thumbnail.png
+format:
+  html:
+    toc: true
+---
+
+## Context
+In February 2026, I did a project that served the purpose of understanding the impact of Brexit on the housing market in the UK. The project involved analyzing housing price data, migration patterns, and economic indicators to determine whether Brexit had a significant effect on housing affordability.
+While the initial hypothesis was that Brexit would lead to a decrease in housing affordability due to potential economic instability and changes in migration patterns, the findings were quite surprising.
+
+## Introduction
+
+In 2008 the average UK house cost 10.38 times gross disposable household
+income per head. In 2023 it cost 10.43 times. On the most widely quoted
+measure of housing affordability, fifteen years produced a change of less
+than half a percent.
+
+That is the sort of number people put in headlines. It is also almost
+meaningless on its own, because the two years arrived at the same place by
+opposite routes.
+
+In 2009 the ratio fell sharply because house prices collapsed by 8.9%.
+In 2023 it fell because nominal household income jumped 8.4% while prices
+stayed flat. One is a market crash. The other is an inflation shock passing
+through wages. Neither describes a household that found housing easier to
+afford, and the ratio cannot tell them apart.
+
+## The question
+
+I built this dataset to answer a narrower question: did UK housing
+affordability deteriorate after the 2016 Brexit referendum?
+
+The measure is the ratio of average UK house price to gross disposable
+household income per head, annual, 2003 to 2023, built from two ONS and
+Land Registry series using a command line pipeline. The referendum sits
+in the middle of the window, which makes a simple before-and-after
+comparison tempting.
+
+It is also the wrong comparison, and the ratio above is the reason why.

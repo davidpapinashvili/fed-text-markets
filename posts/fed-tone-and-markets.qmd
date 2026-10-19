@@ -2,6 +2,7 @@
 title: "Reading the Fed: A Text-Based Analysis of FOMC Statements and Market Reactions"
 author: "David Papinashvili"
 date: 12 April 2026
+image: thumbnail0.jpg
 format:
   html:
     toc: true
